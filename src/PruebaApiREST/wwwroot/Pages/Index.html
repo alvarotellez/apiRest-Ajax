@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--<link rel="stylesheet" href="../Css/main.css" />-->
+    <title></title>
+</head>
+<body>
+    <!--Mirar project.json hay que añadir una linea, aqui añadimos lo que necesite del framework nuestra app(no necesita que el usuario se lo descargue entero el framework)-->
+    <!--Mirar Startup.cs hay una linea añadida-->
+    <!--Mirar launchSettings.json-->
+    <h1>Gestión de Personas</h1>
+    <!--Boton para realizar el listado de las personas-->
+    
+
+
+        
+    <!--Apartado para crear una nueva persona-->
+      <p>
+        <h4>Crear una nueva persona</h4>
+      </p>
+            <input type="text" placeholder="Nombre" id="nombrePersonaNueva" required/><br/>
+            <input type="text" placeholder="Apellidos" id="apesPersonaNueva" required/><br/>
+            <input type="date" placeholder="Fecha Nacimiento" id="fechaNacPersonaNueva" required/><br/>
+            <input type="number" maxlength="9" placeholder="Telefono" id="telefonoPersonaNueva" required/><br/>
+            <input type="text" placeholder="Direccion" id="direccionPersonaNueva" required/><br />
+            <input type="button" value="Crear Persona" id="crearPersona"/><br/>
+    <!--Apartado para actualziar una persona-->
+    <p>
+        <h4>Actualizar una persona</h4>
+    </p>
+            <input type="text" placeholder="Id" id="idPersonaActualizada" /><br />
+            <input type="text" placeholder="Nombre" id="nombrePersonaActualizada" /><br />
+            <input type="text" placeholder="Apellidos" id="apesPersonaActutalizada" /><br />
+            <input type="date" placeholder="Fecha Nacimiento" id="fechaNacPersonaActualizada" /><br />
+            <input type="number" maxlength="9" placeholder="Telefono" id="telefonoPersonaActualizada" /><br />
+            <input type="text" placeholder="Direccion" id="direccionPersonaActualizada" /><br />
+                <input type="button" value="Actualizar Persona" id="editarPersona"/><br/>
+    <!--Apartado para borrar a una persona según su id-->
+    <p>
+        <h4>Borrar una persona</h4>
+        ¿Qué persona desea borrar?
+        <input type="text" id="idPersonaBorrar" placeholder="Id"/>
+        <input type="button" value="Borrar" id="borrarPersona" />
+    </p>
+    <!--Aqui se nos muestra el listado o el cargando-->
+    <p>
+        <h4>Listado</h4>
+    </p>
+    <input type="button" value="Listar" id="listarPersonas" /> 
+    <div id="txtContenedor" /> 
+    <!--Relacionar el html con el js-->
+    <script src="../Scripts/Ajax.js" language="javaScript" type="text/javascript"></script> 
+</body>
+</html>
